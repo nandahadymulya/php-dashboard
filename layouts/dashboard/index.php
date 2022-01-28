@@ -7,11 +7,20 @@
 </head>
 
 <body>
-    <?php include '../components/navbar-top.php'; ?>
-    <?php include '../components/sidebar.php'; ?>
-    <?php include 'dashboard-content.php'; ?>
-    <?php include '../components/footer.php'; ?>
-    <?php include '../components/add-scripts.php'; ?>
+    <div class="d-flex" id="wrapper">
+
+        <?php include '../components/sidebar.php'; ?>
+
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+
+            <?php include '../components/navbar-top.php'; ?>
+
+            <!-- Page content-->
+            <?php include 'dashboard-content.php'; ?>
+        </div>
+        <?php include '../components/dashboard-footer.php'; ?>
+        <?php include '../components/add-scripts.php'; ?>
 </body>
 
 </html>
