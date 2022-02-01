@@ -35,10 +35,10 @@ if (isset($_POST['submit'])) {
     $role_id    = htmlspecialchars($_POST['role_id']);
 
     $query_update = "UPDATE users SET
-                        username, = '$username',
-                        fullname, = '$fullname',
-                        password, = '$password',
-                        role_id,  = '$role_id'
+                        username = '$username',
+                        fullname = '$fullname',
+                        password = '$password',
+                        role_id = '$role_id'
                     WHERE user_id = '$user_id'
                     ";
 
@@ -90,14 +90,8 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="mb-3">
                         <label for="role_id" class="form-label">Role</label>
-                        <select name="role_id" id="role_id" class="form-select" value="<?php if ($user['role_id'] == 1) : ?>
-                                    Developer
-                                <?php elseif ($user['role_id'] = 2) : ?>
-                                    Administrator
-                                <?php elseif ($user['role_id'] = 3) : ?>
-                                    User
-                                <?php endif; ?>">
-                            <option value="1">Developer</option>
+                        <select name="role_id" id="role_id" class="form-select" value="<?= $user['role_id']; ?>">
+                            <option value=" 1">Developer</option>
                             <option value="2">Administrator</option>
                             <option value="3">User</option>
                         </select>
