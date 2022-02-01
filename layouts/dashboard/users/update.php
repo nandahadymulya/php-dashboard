@@ -47,14 +47,14 @@ if (isset($_POST['submit'])) {
     if ($update) {
         echo '
             <script>
-                alert("Successfully updated new User!");
+                alert("Successfully updated User!");
                 document.location="index.php?page=users";
             </script>
             ';
     } else {
         echo '
             <script>
-                alert("Failed updated new user!");
+                alert("Failed updated User!");
                 document.location="index.php?page=users/update&id=' . $user_id . '";
             </script>
             ';
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
                     <div class="mb-3">
                         <label for="role_id" class="form-label">Role</label>
                         <select name="role_id" id="role_id" class="form-select" value="<?= $user['role_id']; ?>">
-                            <option value=" 1">Developer</option>
+                            <option value="1">Developer</option>
                             <option value="2">Administrator</option>
                             <option value="3">User</option>
                         </select>
