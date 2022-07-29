@@ -4,7 +4,7 @@
 $localhost  = "localhost";
 $username   = "root";
 $password   = "root";
-$db         = "mastering_php";
+$db         = "php_dashboard";
 
 $conn = mysqli_connect($localhost, $username, $password, $db);
 
@@ -12,7 +12,6 @@ $conn = mysqli_connect($localhost, $username, $password, $db);
 if (mysqli_connect_errno()) {
     echo "Gagal melakukan koneksi ke MySQL: " . mysqli_connect_error();
 }
-
 
 function query($query)
 {
@@ -24,3 +23,10 @@ function query($query)
     }
     return $rows;
 }
+
+function format_date($date) {
+  date_default_timezone_set("Asia/Bangkok");
+  $timenow = date("j-F-Y-h:i:s A");
+  return date("F j, Y", strtotime($date));
+}
+

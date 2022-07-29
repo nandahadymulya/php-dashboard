@@ -1,11 +1,12 @@
 <?php
+session_start();
 
 $page = (isset($_GET['page'])) ? $_GET['page'] : '';
 $status = (isset($_GET['status'])) ? $_GET['status'] : '';
 
 switch ($page) {
     case 'dashboard':
-        $menu = 'dashboard';
+
         include "dashboard.php";
         break;
 
@@ -25,12 +26,8 @@ switch ($page) {
         include "users/delete.php";
         break;
 
-    case 'employees':
-        include "employees/index.php";
-        break;
-
     case 'logout':
-        include "../../config/functionLogout.php";
+        include "../../config/logout.php";
         break;
 
     default: // Ini untuk set default jika isi dari $page tidak ada

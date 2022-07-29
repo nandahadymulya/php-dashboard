@@ -1,6 +1,5 @@
 <?php
 $page = (isset($_GET['page'])) ? $_GET['page'] : '';
-
 $status = (isset($_GET['status'])) ? $_GET['status'] : '';
 
 switch ($page) {
@@ -17,7 +16,7 @@ switch ($page) {
         break;
 
     case 'logout': // $page == login (jika isi dari $page adalah login)
-        include "../config/functionLogout.php"; // load file login.php yang ada di folder pages
+        include "../config/logout.php"; // load file login.php yang ada di folder pages
         break;
 
     case 'register': // $page == register (jika isi dari $page adalah register)

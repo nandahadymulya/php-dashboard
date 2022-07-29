@@ -3,7 +3,7 @@ session_start();
 
 // cek apakah yang mengakses halaman ini sudah login
 if (!isset($_SESSION['login'])) {
-    header('location: ../../index.php?page=login&status=notlogin');
+    header('location: ../../index.php?page=login');
     exit();
 }
 
@@ -33,7 +33,7 @@ if (!isset($_SESSION['login'])) {
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted ms-auto">Copyright &copy; Nans 2022</div>
+                        <div class="text-muted ms-auto">Copyright &copy; 2022 Nans.</div>
                         <!-- <div>
                             <a href="#">Privacy Policy</a>
                             &middot;
