@@ -26,6 +26,38 @@ switch ($page) {
         include "users/delete.php";
         break;
 
+    case 'menus':
+        include "menus/index.php";
+        break;
+
+    case 'menus/create':
+        include "menus/create.php";
+        break;
+
+    case 'menus/update':
+        include "menus/update.php";
+        break;
+
+    case 'menus/delete':
+        include "menus/delete.php";
+        break;
+
+    case 'transactions':
+        include "transactions/index.php";
+        break;
+
+    case 'transactions/create':
+        include "transactions/create.php";
+        break;
+
+    case 'transactions/update':
+        include "transactions/update.php";
+        break;
+
+    case 'transactions/delete':
+        include "transactions/delete.php";
+        break;
+
     case 'logout':
         include "../../config/logout.php";
         break;

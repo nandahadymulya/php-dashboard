@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $username   = $_POST['username'];
     $fullname   = $_POST['fullname'];
     $password   = $_POST['password'];
-    $role_id    = 3; // 3 = user biasa
+    $role_id    = 2; // 2 = admin
 
     $cek = mysqli_query(
         $conn,

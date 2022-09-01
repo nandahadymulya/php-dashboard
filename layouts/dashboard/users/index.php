@@ -58,5 +58,3 @@ $no = 1
             </div>
         </div>
 </main>
-
-<!-- Button trigger modal -->

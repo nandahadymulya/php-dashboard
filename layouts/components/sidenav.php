@@ -16,30 +16,27 @@ session_start();
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Users
                 </a>
-                <a class="nav-link <?php if ($_GET['page'] === 'employees') echo 'active' ?>" href="index.php?page=employees">
+                <a class="nav-link <?php if ($_GET['page'] === 'transactions') echo 'active' ?>" href="index.php?page=transactions">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Employees
+                    Transactions
                 </a>
-
+                <a class="nav-link <?php if ($_GET['page'] === 'menus') echo 'active' ?>" href="index.php?page=menus">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Menus
+                </a>
 
             <?php elseif ($sidenav = 'admin') : ?>
-                <a class="nav-link <?php if ($_GET['page'] === 'employees') echo 'active' ?>" href="index.php?page=employees">
+                <a class="nav-link <?php if ($_GET['page'] === 'users') echo 'active' ?>" href="index.php?page=users">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Employees
+                    Users
                 </a>
-
-
-            <?php elseif ($sidenav = 'user') : ?>
-                <a class="nav-link <?php if ($_GET['page'] === 'employees') echo 'active' ?>" href="index.php?page=employees">
+                <a class="nav-link <?php if ($_GET['page'] === 'transactions') echo 'active' ?>" href="index.php?page=transactions">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Employees
+                    Transactions
                 </a>
-
-            <?php else : ?>
-
-                <a class="nav-link <?php if ($_GET['page'] === 'dashboard') echo 'active' ?>" href="index.php?page=dashboard">
+                <a class="nav-link <?php if ($_GET['page'] === 'menus') echo 'active' ?>" href="index.php?page=menus">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
+                    Menus
                 </a>
 
             <?php endif ?>
